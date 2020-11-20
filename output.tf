@@ -1,4 +1,6 @@
 output "json" {
+  description = "JSON representation of variables map."
+
   value = join(",",
     [for k in keys(var.map):
       templatefile(
