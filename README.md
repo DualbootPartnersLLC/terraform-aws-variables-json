@@ -17,8 +17,8 @@ locals {
 }
 
 module "variables" {
-  source  = "dbp/variables-json/aws"
-  version = "1.0.0"
+  source  = "DualbootPartnersLLC/variables-json/aws"
+  version = "1.0.2"
   map     = local.app_env_vars
 }
 
